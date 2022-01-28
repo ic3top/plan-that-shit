@@ -1,0 +1,13 @@
+.planning-card {
+  @apply flex items-center justify-center h-28 w-20 rounded bg-blue-400 shadow-lg;
+  @apply hover:shadow-xl hover:-translate-y-1 duration-200;
+  @apply border-4 border-blue-400;
+}
+
+.planning-card_dashed {
+  @apply border-dashed border-blue-400 bg-transparent;
+}
+
+.planning-card_selected {
+  @apply pointer-events-none bg-blue-500 border-blue-500 -translate-y-1 shadow-2xl scale-105 duration-100
+}
