@@ -31,15 +31,11 @@ export const useRoom = (roomId, username) => {
     socketRef.current.on(ON.ROOM, (room) => {
       setRoom(room);
       setVotes(room.currentEstimation?.votes || []);
-      console.log({ useRoom: room });
     });
     socketRef.current.on(ON.NOTIFICATION, (notification) => {
       toast.custom((t) => <CustomToast t={t} title={notification.title} description={notification.description} />)
     });
     socketRef.current.on(ON.USERS, setUsers)
-    // socketRef.current.on(ON.ESTIMATION_DONE, (vote) => {
-    //   setVotes(prev => [...prev, vote]);
-    // });
 
     socketRef.current.emit(EMIT.JOIN, { username, userId });
 

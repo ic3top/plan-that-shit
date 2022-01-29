@@ -17,8 +17,8 @@ export const EMIT = {
   JOIN,
   ESTIMATE,
   REVEAL,
-  START
-}
+  START,
+};
 
 export const ON = {
   NOTIFICATION,
@@ -27,6 +27,5 @@ export const ON = {
   ESTIMATION_DONE,
   CONNECTION,
   ERROR,
-  EXCEPTION
-}
-
+  EXCEPTION,
+};

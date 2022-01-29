@@ -6,7 +6,7 @@ import classNames from "classnames";
 
 export const UserCard = ({ name, votes, isVoting }) => {
   const userVote = votes.find(({ user }) => user === name);
-  console.log(userVote);
+
   const votingViewClasses = classNames("border-4 w-full rounded-md border-blue-400 h-full flex items-center justify-center", {
     "bg-blue-400": userVote && isVoting,
     "bg-blue-400 text-3xl text-white font-bold": !isVoting

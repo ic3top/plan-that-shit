@@ -5,11 +5,11 @@ module.exports = {
   theme: {
     fontFamily: {
       display: ['Open Sans', 'sans-serif'],
-      body: ['Open Sans', 'sans-serif']
+      body: ['Open Sans', 'sans-serif'],
     },
     extend: {
       screens: {
-        mf: '990px'
+        mf: '990px',
       },
       keyframes: {
         enter: {
@@ -33,6 +33,6 @@ module.exports = {
     },
   },
   variants: {
-    extend: {}
+    extend: {},
   },
 };
