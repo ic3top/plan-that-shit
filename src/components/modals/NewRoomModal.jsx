@@ -15,7 +15,7 @@ export const NewRoomModal = ({ isOpen, setIsShown, roomId, loading }) => {
       error: 'Rejected 🤯'
     })
   }
-  const roomLink = window.location.origin + '/' + roomId;
+  const roomLink = window.location.origin + `/${import.meta.env.VITE_BASE_ROUTE}/` + roomId;
 
   const RoomIdView = loading
     ? <Loader className="mt-6 py-2" />

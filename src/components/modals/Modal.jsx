@@ -5,9 +5,10 @@ export const Modal = ({ isOpen, actions, title, message, content }) => (
   <div>
     <ReactModal
       isOpen={isOpen}
+      htmlOpenClassName="overflow-y-hidden"
       contentLabel="New room created"
-      className="max-w-2xl mx-auto bg-white rounded-lg shadow-md absolute bottom-1/2 right-1/2 translate-y-1/2 translate-x-1/2 max-w-[500px]"
-      overlayClassName="absolute top-0 bottom-0 right-0 left-0 bg-gray-200 bg-gray-200/[.7]"
+      className="max-w-2xl mx-auto bg-white rounded-lg shadow-md fixed bottom-1/2 right-1/2 translate-y-1/2 translate-x-1/2 max-w-[500px]"
+      overlayClassName="fixed top-0 bottom-0 right-0 left-0 bg-gray-200 bg-gray-200/[.7]"
     >
       <div className="px-4">
         {title && <h2 className="text-2xl font-bold text-gray-700 mt-2">{title}</h2>}

@@ -3,7 +3,6 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 import { Home } from "./pages/home/Home";
@@ -14,7 +13,7 @@ import {Header} from "./components/Header";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={`/${import.meta.env.VITE_BASE_ROUTE}`}>
       <Toaster position='bottom-right' />
       <Header />
 

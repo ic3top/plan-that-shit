@@ -12,7 +12,7 @@ export const RevealAwarenessModal = ({ isOpen, setIsOpen, reveal }) => {
   return (
     <Modal
       isOpen={isOpen}
-      title={<span className="flex gap-4 text-yellow-500"><BsFillExclamationTriangleFill size={28} /> Awareness</span>}
+      title={<span className="flex items-center gap-2 text-yellow-500"><BsFillExclamationTriangleFill size={28} /> Not everyone voted</span>}
       message={
         "Be aware, not everyone voted. Their estimates will not be taken into account and will be represented as '?' - question mark."
       }
