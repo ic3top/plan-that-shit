@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 import {
   BrowserRouter,
   Routes,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 
-import { Home } from "./pages/home/Home";
-import { Room } from "./pages/room/Room";
-import {Toaster} from "react-hot-toast";
-import {NoMatch} from "./pages/NoMatch";
-import {Header} from "./components/Header";
+import { Toaster } from 'react-hot-toast';
+import { Home } from './pages/home/Home';
+import { Room } from './pages/room/Room';
+import { NoMatch } from './pages/NoMatch';
+import { Header } from './components/Header';
 
 function App() {
   return (
     <BrowserRouter basename={`/${import.meta.env.VITE_BASE_ROUTE}`}>
-      <Toaster position='bottom-right' />
+      <Toaster position="bottom-right" />
       <Header />
 
       <Routes>
@@ -23,7 +23,7 @@ function App() {
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

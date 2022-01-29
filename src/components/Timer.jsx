@@ -1,10 +1,10 @@
-import {useEffect, useState} from "react";
-import {formatTime} from "../utils/formTime";
+import { useEffect, useState } from 'react';
+import { formatTime } from '../utils/formTime';
 
-export const Timer = ({ className }) => {
-  const [secs, setSecs] = useState(Date.now())
+export function Timer({ className }) {
+  const [secs, setSecs] = useState(Date.now());
   useEffect(() => {
-    const interval = setInterval(() => setSecs(Date.now()), 1000)
+    const interval = setInterval(() => setSecs(Date.now()), 1000);
     return () => clearInterval(interval);
   });
 

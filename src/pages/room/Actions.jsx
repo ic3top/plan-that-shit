@@ -1,8 +1,8 @@
-import React, {useState} from 'react';
-import {Button} from "../../components/Button";
-import {StoryNameModal} from "../../components/modals/StoryNameModal";
+import React, { useState } from 'react';
+import { Button } from '../../components/Button';
+import { StoryNameModal } from '../../components/modals/StoryNameModal';
 
-export const Actions = ({ reveal, startVoting, isVoting }) => {
+export function Actions({ reveal, startVoting, isVoting }) {
   const [modalShown, setModalShown] = useState(false);
 
   return (
@@ -14,5 +14,5 @@ export const Actions = ({ reveal, startVoting, isVoting }) => {
           : <Button bordered onClick={() => setModalShown(true)} className="w-1/2 mx-auto">Start Voting</Button>
       }
     </>
-  )
-};
+  );
+}
